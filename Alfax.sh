@@ -6,12 +6,12 @@ case "$1" in
 	start)
 		echo -n "::: Iniciando daemon Alfax :::"
 		fecha='date'
-		echo $fecha >>  /tmp/Alfax/despliegue
+		echo $fecha >>  /tmp/despliegue
 		exit 0
 		;;
 	stop)
 		echo -n "::: Parando daemon Alfax :::"
-		rm -f /tmp/Alfax/despliegue
+		rm -f /tmp/despliegue
 		exit 0
 		;;
 	*)
